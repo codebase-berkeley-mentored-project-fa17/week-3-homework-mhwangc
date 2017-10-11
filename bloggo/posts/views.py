@@ -23,5 +23,4 @@ def post_details(request, pk):
     # Question 2
     # You should create a new file in the templates directory.
     # REPLACE THE LINE WITH YOUR CODE
-    post = Post.objects.get(pk=pk)
     return render(request, "posts/details.html", {"post": Post.objects.get(pk=pk)})
